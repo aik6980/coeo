@@ -1,0 +1,6 @@
+include includes/base
+script(src="/socket.io/socket.io.js")
+h3 Game name = #{game_name}
+script.
+    game_name="#{game_name}";
+script(src="public/js/game.js")

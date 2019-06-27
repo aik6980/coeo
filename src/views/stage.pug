@@ -1,0 +1,41 @@
+include includes/base
+div.lobby
+    h1 Spacey Friends
+    if error
+        h3(style="color: red;") #{error}
+
+    div
+        h2 Use the below to CONTROL a game
+        form(name="gameName", method="post")
+            input(type="hidden" name="requestingFor" value="controller")
+            div
+                span.label Game name
+                br
+                if game_name
+                    input(type="text", name="game_name" value="#{game_name}")
+                else
+                    input(type="text", name="game_name")
+            div
+                span.label Player name
+                br
+                if player_name
+                    input(type="text", name="player_name" value="#{player_name}")
+                else
+                    input(type="text", name="player_name")
+
+            div
+                input(type="submit", value="JOIN")
+
+    div
+        h2 Use the below form to CREATE a new game using this device as a display
+        form(name="gameName", method="post")
+            input(type="hidden" name="requestingFor" value="newGame")
+            div
+                span.label Game name
+                br
+                if new_game_name
+                    input(type="text", name="game_name" value="#{new_game_name}")
+                else
+                    input(type="text", name="game_name")
+            div
+                input(type="submit", value="START")

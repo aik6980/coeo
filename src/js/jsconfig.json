@@ -1,0 +1,1 @@
+// jsconfig.json is not using as part of the build system but here, so we can use VISUAL STUDIO CODE intellisense for typings correctly

@@ -1,0 +1,19 @@
+$sf_black: #000000;
+$sf_main: #828282;
+body {
+  background-color: black;
+  color: $sf_main;
+  font-family: 'Righteous', cursive;
+
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  margin: 0;
+}
+
+div.lobby {
+  padding: 30px;
+  text-align: center;
+}

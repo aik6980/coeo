@@ -1,0 +1,31 @@
+{
+"frames": [
+	{
+	"filename": "asteroid0",
+	"frame": {"x":0,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false
+	},
+	{
+	"filename": "asteroid1",
+	"frame": {"x":128,"y":0,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false
+	},
+	{
+	"filename": "asteroid2",
+	"frame": {"x":0,"y":128,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false
+	},
+	{
+	"filename": "asteroid3",
+	"frame": {"x":128,"y":128,"w":128,"h":128},
+	"rotated": false,
+	"trimmed": false
+	}
+],
+"meta": {
+	"image": "asteroids.png"
+} 
+}

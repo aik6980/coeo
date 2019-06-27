@@ -1,0 +1,6 @@
+- asteroids.png
+https://raw.githubusercontent.com/wiki/GarageGames/Torque2D/Getting_Started_images/asteroids.png
+- explosion
+https://s-media-cache-ak0.pinimg.com/originals/79/a0/ec/79a0eceb71bb6a9939df582317038b81.png
+- earth
+http://iconbug.com/data/2f/256/52ee254c6c7bd6b6e997a4eeaf165a9a.png
