@@ -1,4 +1,4 @@
-import HealthBar from '../shared/objects/healthbar'
+import {} from '../shared/objects/healthbar'
 
 var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'phaser-example');
 

@@ -1,9 +1,4 @@
-
-//export interface HealthBarCreateInfo {
-//    dimension : Phaser.Point;
-//}
-
-export default class HealthBar extends Phaser.Sprite {
+export class HealthBar extends Phaser.Sprite {
     
     background;
     foreground;

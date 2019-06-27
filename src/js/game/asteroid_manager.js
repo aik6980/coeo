@@ -1,4 +1,4 @@
-import Asteroid from './objects/asteroid.js';
+import {} from './objects/asteroid.js';
 
 export class SpawnPoint {
     ref_point;
