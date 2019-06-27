@@ -1,7 +1,7 @@
-import '../../shared/objects/smoke_vfx.js'
-import './rocket.js'
+import SmokeEmitter from '../../shared/objects/smoke_vfx.js'
+import Rocket from './rocket.js'
 
-export class Ship extends Phaser.Sprite {
+export default class Ship extends Phaser.Sprite {
     name;
     thrust_amount = 0.0;
     angular_accel_amount = 0.0;
@@ -51,7 +51,7 @@ export class Ship extends Phaser.Sprite {
         //this.healthbar = new Objects.HealthBar(this.game);
         //this.game.add.existing(this.healthbar);
 
-        this.bmd = game.make.bitmapData();
+        this.bmd = this.game.make.bitmapData();
         this.bmd.load('ship');
 
         this.smoke_vfx = new SmokeEmitter(this.game, 0, 0);

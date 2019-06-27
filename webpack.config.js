@@ -3,8 +3,12 @@ const WEBPACK = require('webpack');
 const COPY_PLUGIN = require('copy-webpack-plugin');
 
 module.exports = {
+    devtool: 'source-map',
+    watch: true,
+
     entry: {
-        game: './src/js/game/game.js'
+        game: './src/js/game/game.js',
+        controller: './src/js/controller/controller.js'
     },
     module: {
         rules: [

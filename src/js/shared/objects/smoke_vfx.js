@@ -1,5 +1,5 @@
 
-export class SmokeEmitter extends Phaser.Particles.Arcade.Emitter {
+export default class SmokeEmitter extends Phaser.Particles.Arcade.Emitter {
     constructor( game, x, y ) {
         super(game, x, y)
 

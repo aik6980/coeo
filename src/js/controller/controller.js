@@ -1,39 +1,24 @@
-var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'phaser-example');
-declare namespace Phaser {
-    class VirtualJoystick extends Phaser.Plugin {
-        addStick : any;
-        addButton : any;
-    }
+import HealthBar from '../shared/objects/healthbar'
 
-    namespace VirtualJoystick {
-        var HORIZONTAL : any;
-        class Stick {
-            motionLock : any;
-            isDown : any;
-            forceX : any;
-            posX : any;
-            posY : any;
-        }
-    }
-}
+var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'phaser-example');
 
 class PhaserGame extends Phaser.State {
-    sprite : Phaser.Sprite;
+    sprite;
     activate_weapon = false;
-    thrust : boolean;
-    pad : Phaser.VirtualJoystick;
-    stick : Phaser.VirtualJoystick.Stick;
-    buttonA : any;
-    buttonB : any;
-    buttonLeft : any;
-    buttonRight : any;
-    rotation : any;
-    background :Phaser.TileSprite;
+    thrust;
+    pad;
+    stick;
+    buttonA;
+    buttonB;
+    buttonLeft;
+    buttonRight;
+    rotation;
+    background;
 
     buttonPadding = 60;
 
     // health bar
-    healthbar : Objects.HealthBar;
+    healthbar;
 
     init() {
         this.game.renderer.renderSession.roundPixels = true;
@@ -74,7 +59,7 @@ class PhaserGame extends Phaser.State {
 
         this.buttonRight = this.pad.addButton(0, 0, 'arcade', 'buttonRight-up', 'buttonRight-down');
 
-        this.healthbar = new Objects.HealthBar(this.game);
+        this.healthbar = new HealthBar(this.game);
         this.healthbar.position.set(this.game.width/2, this.game.height/2);
         this.healthbar.scale.set(this.game.width/2, this.game.height*0.1);
         this.game.add.existing(this.healthbar);
