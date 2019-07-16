@@ -1,4 +1,4 @@
-import {} from '../shared/objects/healthbar'
+import HealthBar from '../shared/objects/healthbar.js';
 
 var game = new Phaser.Game(window.innerWidth, window.innerHeight, Phaser.AUTO, 'phaser-example');
 
@@ -59,7 +59,8 @@ class PhaserGame extends Phaser.State {
 
         this.buttonRight = this.pad.addButton(0, 0, 'arcade', 'buttonRight-up', 'buttonRight-down');
 
-        this.healthbar = new HealthBar(this.game);
+        let healthBar = new HealthBar(this.game);
+        this.healthbar = healthBar;
         this.healthbar.position.set(this.game.width/2, this.game.height/2);
         this.healthbar.scale.set(this.game.width/2, this.game.height*0.1);
         this.game.add.existing(this.healthbar);

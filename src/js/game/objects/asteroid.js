@@ -1,4 +1,4 @@
-export class Asteroid extends Phaser.Sprite {
+export default class Asteroid extends Phaser.Sprite {
     constructor(game, x, y) {
         super(game, x, y, 'atlas');
         this.game = game;

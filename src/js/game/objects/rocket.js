@@ -1,5 +1,5 @@
 
-export class Rocket extends Phaser.Bullet {
+export default class Rocket extends Phaser.Bullet {
     owner;
 
     constructor( game, x, y, key, frame) {

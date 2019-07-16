@@ -1,10 +1,10 @@
-export class HealthBar extends Phaser.Sprite {
+export default class HealthBar extends Phaser.Sprite {
     
     background;
     foreground;
 
-    constructor( game ) {
-        super( game, 0, 0 );
+    constructor(game) {
+        super(game, 0, 0, null);
 
         // create a bitmap data, if there isn't one
         if (this.game.cache.checkBitmapDataKey('white_1px') == false) {

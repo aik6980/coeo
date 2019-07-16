@@ -1,5 +1,5 @@
-import {} from "./asteroid_manager.js";
-import {} from "./objects/ship.js";
+import AsteroidManager from "./asteroid_manager.js";
+import Ship from "./objects/ship.js";
 
 class GameState extends Phaser.State {
 
