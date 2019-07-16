@@ -62,3 +62,6 @@ typings/
 
 # build folder
 public/
+
+# package-lock
+package-lock.json
